@@ -1,0 +1,147 @@
+.conteudo-bg {
+    background: #222721;
+    box-shadow:  inset 0 -150px white;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.conteudo-texto {
+    font-family: "Bruno Ace";
+    padding-left: 120px;
+}
+
+
+.conteudo h2 {
+    font-size: 96px;
+    max-width: 4ch;
+    align-self: center;
+    color: #fff;
+}
+
+
+
+.conteudo a {
+    text-align: center;
+    padding: 8px;
+    max-width: fit-content;
+    display: block;
+
+
+}
+
+.conteudo-imagem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+@media (max-width:800px) {
+    .conteudo-bg {
+        box-shadow: none
+    }
+    
+    .conteudo{
+        grid-template-columns: 1fr;
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 56px;
+        padding-left: 0px;
+    }
+
+    .conteudo a {
+        padding: 6px 12px;
+        justify-self: left;
+        
+    }
+
+    .conteudo-texto {
+        padding: 0px;
+    }
+}
+
+
+.conteudo-dois {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.imagem-conteudo-dois img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.conteudo-dois h3 {
+    
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+@media (max-width:800px) {
+    .conteudo-dois {
+        margin-bottom: 20px;
+    }
+
+    .conteudo-dois h3 {
+        font-size: 33px;
+        max-width: fit-content;
+    }
+    
+    .imagem-conteudo-dois {
+        padding: 0px;
+    }
+    .imagem-conteudo-dois img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+     
+    }
+}
+
+
+.conteudo-final-bg {
+    background: #334026;
+    padding-bottom: 120px;
+}
+
+.conteudo-final {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+
+.conteudo-final img {
+    border-radius: 5px;
+    border-top-right-radius : 80%;
+    border-bottom-right-radius: 80%;
+}
+
+
+
+
+
+@media (max-width:800px) {
+    .conteudo-final {
+        gap: 20px;
+        margin: 0px;
+    }
+} 

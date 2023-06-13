@@ -1,0 +1,131 @@
+
+
+#produtos .titulo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+.produtos-bg {
+    background-image: linear-gradient(to right, var(--cor-0) 30%, var(--cor-12) 0%);
+    
+}
+
+.produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+
+
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+#produtos main {
+    margin-bottom: 120px;
+}
+.produtos-imagem {
+    display: grid;
+}
+
+.produtos-imagem img {
+    grid-area: 1/1;
+    object-fit: cover;
+
+
+}
+
+.produtos-imagem span {
+    background: var(--cor-p4);
+    color: var(--cor-3);
+    display: inline-block;
+    border-radius: 0px 5px 5px 0px;
+    padding: 8px 16px 8px 8px;
+    grid-area: 1/1;
+    place-self: start start;
+}
+
+.produtos-conteudo {
+    display: grid;
+    /* align-content: center; */
+}
+
+.produtos-lista ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-content: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    animation: mymove 2s ease-out;
+    position: relative;
+   /* filter: drop-shadow(0px 0px 20px red);   */
+
+
+}
+
+@keyframes mymove {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } 
+
+
+ .produtos-lista {
+    display: grid;
+    align-items: center;
+}
+
+.produtos-conteudo a {
+    text-align: center;
+    justify-self: right;
+    padding: 5px 10px;
+    align-self: end;
+    
+
+}
+
+.produtos-conteudo h1:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 10px;
+    background: red;
+}
+
+@media (max-width:800px) {
+    .produto {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        
+    }
+
+    .produtos-bg {
+        background: none;
+    }
+
+    .produtos-conteudo h1 {
+        color: var(--cor-12);
+
+    }
+
+    .produtos-conteudo p {
+        color: var(--cor-12);
+
+    }
+
+    .produtos-lista  {
+        display: grid;
+        justify-content: left;
+        margin: 0px;
+    }
+}

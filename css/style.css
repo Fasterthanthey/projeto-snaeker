@@ -1,0 +1,28 @@
+/* Global  */
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* Utilidades  */
+@import "./utilidades/componentes.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+
+/* Home  */
+
+@import "./Home/introducao.css";
+@import "./Home/conteudo.css";
+
+
+/* Produtos  */
+
+@import "./produtos.css/produtos.css";  
+
+/* Quem Somos */
+
+@import "./quem-somos/quem-somos.css";
+
+
+/* Lojas */
+
+@import "./lojas/lojas.css";

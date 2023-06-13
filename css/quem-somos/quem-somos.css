@@ -1,0 +1,51 @@
+#quemsomos main {
+  background-image: url("/imagem/rain.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.quem-somos {
+  display: grid;
+ 
+}
+
+.titulo h1 {
+    font-family:  "Bruno ace";
+    font-size: 5rem;
+  color: #0d0400;
+}
+
+
+
+.titulo p {
+    color: #FAEEFA;
+}
+
+.quem-somos-texto-bg {
+  background: #dcc9f0;
+  /* text-align: center; */
+  padding: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+}
+
+.quem-somos-texto-bg h1 {
+  font-family: "Bruno Ace";
+  color: #3f2559;
+  text-align: center;
+}
+
+.quem-somos-texto-bg p {
+    color: #180D09;
+    font-weight: 500;
+    line-height: 1.2em;
+    max-width: 100ch;
+}
+
+.quem-somos-imagem {
+  justify-self: center;
+  padding-bottom: 60px;
+  width: 500;
+  height: 500;
+}

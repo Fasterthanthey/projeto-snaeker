@@ -1,0 +1,163 @@
+main#mapas {
+  /* margin-top: 120px; */
+  background-color: black;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: white;
+  display: grid;
+  justify-items: center;
+}
+
+section {
+  box-shadow: 5px 10px 1px black;
+}
+
+.mapas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+
+}
+
+.mapa > h1 {
+  margin-bottom: 20px;
+  font-family: Bruno Ace;
+  text-align: left;
+
+}
+
+div#sp iframe {
+  border: 2px solid rgba(0, 0, 0, 0.37);
+  border-radius: 5px;
+}
+
+div#rj iframe {
+  border: 2px solid rgba(0, 0, 0, 0.37);
+  border-radius: 5px;
+}
+
+/* Formulário */
+
+div#forms {
+  display: flex;
+}
+
+
+div .informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  border-radius: 5px 0 0 5px;
+  
+}
+
+div .informacoes > h1 {
+  display: block;
+  font-family: Bruno ace;
+
+}
+
+div .pessoal > ul {
+  margin-top: 50px;
+  padding-top: 50px;
+
+}
+
+div .pessoal a:hover {
+  color: rgb(236, 3, 3);
+
+}
+
+div .redes-sociais img {
+  display: block;
+  width: 50px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.redes-sociais img:hover {
+  transform: translate(5px, -10px);
+  
+}
+
+div .redes-sociais > ul {
+  display: flex;
+  gap: 50px;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+section {
+  display: grid;
+  background-color: rgba(5, 30, 51, 0.863);
+  padding-top: 40px;
+  padding-bottom: 60px;
+  justify-items: center;
+  box-shadow: 5px 10px 1px black  ;
+  /* grid-template-columns: 1fr 1fr; */
+
+} 
+
+form {
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.39);
+  padding: 20px;
+
+
+} 
+
+
+.form {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  gap: 20px;
+  font-family: bruno ace;
+  color: rgb(0, 0, 0);
+  background-color: rgb(65, 96, 114);
+
+
+}
+
+.form label {
+  display: block;
+  font: bruno ace;
+  margin-bottom: 4px;
+
+}
+
+.form .col-2 {
+  grid-column: span 2;
+}
+
+.form input[type="email"],
+.form input[type="text"],
+.form textarea {
+  font: 400 1rem/1.5 "poppins";
+  background-color: white;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+/* .form input[type="email"]:focus,
+.form input[type="text"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.233);
+  background: white;
+  box-shadow: 0 0 0 2px #fea ;
+
+} */
+
+
+

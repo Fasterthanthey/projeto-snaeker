@@ -1,0 +1,66 @@
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao {
+    display: block;
+    background:#BB3E28;
+    border-radius: 5px;
+    padding: 1px 1px;
+    text-transform: uppercase;
+    color: #e4c0bc;
+    font-size: 18px;
+    line-height: 1,33;
+    font-weight: 500;
+    font-family: "poppins";
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: white;
+    color: black;
+    font-weight: 500;
+}
+
+ .carrossel {
+    width: 100%;
+    padding-top: 120px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+   
+}
+
+.carrossel::-webkit-scrollbar {
+    height: 18px;
+    width: 0px;
+    /* scroll-behavior: smooth; */
+    
+    
+}
+
+
+
+#home-page .carrossel::-webkit-scrollbar-thumb {
+        height: 0px;
+}
+
+#home-page .carrossel::-webkit-scrollbar-thumb:hover {
+    background: #A66D3C;
+    border-radius: 5px;
+    height: 12px;
+}
+
+#home-page .carrossel::-webkit-scrollbar-track {
+   height: 0;
+}
+
+#home-page .carrossel::-webkit-scrollbar-track:hover {
+    background: #023859;
+    border-radius: 5px;
+}

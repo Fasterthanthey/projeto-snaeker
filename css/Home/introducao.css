@@ -1,0 +1,125 @@
+
+.introducao-bg {
+    background: #1D1F24;
+    padding-bottom: 100px;
+}
+
+.titulo { 
+    padding-top: 40px;
+    padding-bottom : 40px;
+
+}
+
+
+
+#home .titulo h1 {
+
+    text-align: center;
+    color: #D92B2B;
+    font-family: "Bruno Ace";
+    font-size: 5rem;
+}
+
+
+.introducao {
+  position: relative;
+  animation: mymove-home 2.0s ease-out;
+}
+
+@keyframes mymove-home {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 18%;
+      width: 100%;
+      
+    }
+  }
+
+
+.introducao-imagem  {
+    display: grid;
+    justify-content: center;
+    padding: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.introducao-imagem::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("/detalhe/Detelhe-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute; 
+    z-index: -1;
+    top: 80px;
+}
+
+.introducao-imagem img {
+    object-fit: cover;
+    width: 543px;
+    height: 814px;
+    border-radius: 5px;
+
+}
+
+
+@media (max-width:800px) {
+    .introducao-bg{
+        padding-bottom: 0px;
+    }
+    
+    .introducao {
+    background: none;
+    position: inherit;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    animation: none;
+    }
+    .introducao-imagem {
+        padding: 20px;
+    }
+
+    .introducao-imagem img {
+        object-fit: contain;
+        width: initial;
+        height: initial;
+       justify-self: center;
+    
+    }
+    #home .titulo h1 {
+        font-size: 2.5em ;
+        padding-bottom: 0px;
+    }
+
+    .introducao-imagem::after{
+        display: none;
+    }
+
+}
+
+
+@media (max-width:300px) {
+
+    .introducao-bg{
+        padding-bottom: 20px;
+    }
+    .introducao {
+        background: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+    /* .introducao-imagem img {
+        object-fit: cover;
+        width:150px;
+    }
+}  */

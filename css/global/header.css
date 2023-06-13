@@ -1,0 +1,105 @@
+.header-bg {
+    background: var(--cor-11)
+}
+
+/* i#burguer  {
+    background-color: var(--cor-5);
+    color: var(--cor-1);
+    display: block;
+    justify-items: center;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: var(--cor-1);
+    color: rgb(0, 0, 0);
+} */
+
+.header-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--cor-3);
+    padding-top: 1px;
+    padding: 10px 10px;
+    align-items: center;
+
+}
+
+.header-menu h1 {
+    font-family: "Bruno Ace";
+    font-size: 2rem;
+    align-self: center;
+
+}
+
+
+.header-menu-lista ul {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+
+}
+
+.header-menu-lista a {
+    color: #fff
+}
+
+.header-menu-lista a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 1px;
+    background: #ebebee;
+    transition: 0.3s;
+}
+
+.header-menu-lista a:hover::after {
+    width: 100%;
+}
+
+
+
+@media (max-width:800px) {
+    .header-menu {
+        grid-template-columns: 1fr;
+        
+    }
+    .header-menu h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .header-menu-lista ul  {
+     flex-wrap: no-wrap;
+     padding-left: 0px;
+     padding-right: 0px;
+     justify-content: center;
+   
+    }
+}
+
+@media (max-width:600px) {
+    .header-menu {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+    .header-menu h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .header-menu-lista ul  {
+     flex-wrap: no-wrap;
+     padding-left: 0px;
+     padding-right: 0px;
+     font-size: 1rem;
+   
+    }
+    .header-menu-lista a::after{
+        display: none;
+    }
+}
