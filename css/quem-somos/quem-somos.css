@@ -1,5 +1,5 @@
 #quemsomos main {
-  background-image: url("/imagem/rain.jpg");
+  background-image: url("./imagem/rain.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
