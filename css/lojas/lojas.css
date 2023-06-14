@@ -8,7 +8,7 @@ main#mapas {
   justify-items: center;
 }
 
-section {
+section#mapas {
   box-shadow: 5px 10px 1px black;
 }
 
@@ -17,6 +17,17 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 80px;
 
+}
+
+@media (max-width:600px) {
+  .mapas {
+    grid-template-columns: 1fr;
+  }
+
+  iframe {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 .mapa > h1 {
@@ -42,6 +53,12 @@ div#forms {
   display: flex;
 }
 
+@media (max-width:600px) {
+  div#forms {
+    display: grid;
+  }
+}
+
 
 div .informacoes {
   display: flex;
@@ -53,6 +70,7 @@ div .informacoes {
   border-radius: 5px 0 0 5px;
   
 }
+
 
 div .informacoes > h1 {
   display: block;
@@ -90,16 +108,19 @@ div .redes-sociais > ul {
   margin-top: 50px;
 }
 
-section {
+section#lojas  {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  
   background-color: rgba(5, 30, 51, 0.863);
   padding-top: 40px;
   padding-bottom: 60px;
   justify-items: center;
   box-shadow: 5px 10px 1px black  ;
-  /* grid-template-columns: 1fr 1fr; */
 
 } 
+
+
 
 form {
   max-width: 500px;
@@ -121,9 +142,9 @@ form {
   font-family: bruno ace;
   color: rgb(0, 0, 0);
   background-color: rgb(65, 96, 114);
-
-
 }
+
+
 
 .form label {
   display: block;

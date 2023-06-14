@@ -43,7 +43,7 @@
 .introducao-imagem  {
     display: grid;
     justify-content: center;
-    padding: 100px;
+    /* padding: 100px; */
     position: relative;
     z-index: 2;
 }
@@ -52,7 +52,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background-image: url("./detalhe/Detelhe-1.png");
+    background-image: url("../../detalhe/Detelhe-1.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute; 
@@ -69,57 +69,48 @@
 }
 
 
-@media (max-width:800px) {
-    .introducao-bg{
-        padding-bottom: 0px;
+
+@media (min-width:280px) and (max-width:400px) {
+
+    div.introducao-bg {
+        margin: 0px;
+        background-color: #D92B2B;
     }
-    
+
     .introducao {
-    background: none;
-    position: inherit;
-    padding-bottom: 20px;
-    padding-top: 5px;
-    animation: none;
-    }
-    .introducao-imagem {
-        padding: 20px;
+        display: grid;
+        animation: none;
+        background: none;
+        /* position: relative; */
+        padding-top: 50px;
+        padding-bottom: 50px;        
+        justify-content: center;
+
     }
 
-    .introducao-imagem img {
-        object-fit: contain;
-        width: initial;
-        height: initial;
-       justify-self: center;
-    
-    }
-    #home .titulo h1 {
-        font-size: 2.5em ;
-        padding-bottom: 0px;
+    #home .titulo h1, #home .titulo p {
+        font-size: 1.5rem;
+        color: white;
+        display: none;
     }
 
-    .introducao-imagem::after{
+    pciture.introducao-imagens {
+        padding: 0;
+    }
+
+    picture.introducao-imagem > img {
+        object-fit: cover;
+        width: 300px;
+        height: 380px;
+        /* position: absolute;
+        right: 10%;
+        bottom: -50%; */
+    }
+
+    picture.introducao-imagem::after{
         display: none;
     }
 
 }
 
 
-@media (max-width:300px) {
-
-    .introducao-bg{
-        padding-bottom: 20px;
-    }
-    .introducao {
-        background: none;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-}
-
-
-    /* .introducao-imagem img {
-        object-fit: cover;
-        width:150px;
-    }
-}  */

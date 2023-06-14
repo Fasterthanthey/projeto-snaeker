@@ -1,7 +1,10 @@
-#quemsomos main {
-  background-image: url("./imagem/rain.jpg");
+body#quemsomos {
+  /* background-color: black; */
+background-image: url(../../imagem/rain.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center left;
 }
 
 .quem-somos {

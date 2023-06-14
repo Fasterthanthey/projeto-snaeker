@@ -6,14 +6,14 @@
 .conteudo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 60px;
+    padding-top: 40px;
     justify-content: center;
     margin-bottom: 120px;
 }
 
 .conteudo-texto {
     font-family: "Bruno Ace";
-    padding-left: 120px;
+    /* padding-left: 120px; */
 }
 
 
@@ -43,34 +43,36 @@
 }
 
 
+@media (min-width:280px) and (max-width:400px) {
+    div.conteudo-bg {
+        background-color: #222721;
+        box-shadow: none;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+    }
+    div.conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-
-@media (max-width:800px) {
-    .conteudo-bg {
-        box-shadow: none
+    div.conteudo-imagem {
+        display: grid;
+        justify-content: right;
     }
     
-    .conteudo{
-        grid-template-columns: 1fr;
-        padding-bottom: 40px;
-        margin-bottom: 20px;
+    div.conteudo-imagem > img {
+        margin-top: 5px;
+        padding-top: 1px;
+        display: grid;
+        width: 350px;
     }
 
-    .conteudo h2 {
-        font-size: 56px;
-        padding-left: 0px;
-    }
-
-    .conteudo a {
-        padding: 6px 12px;
-        justify-self: left;
+    div.conteudo  h2 {
+        font-size: 3rem;
+        padding-top:20px;
+        padding-bottom: 20px
         
     }
-
-    .conteudo-texto {
-        padding: 0px;
-    }
-}
 
 
 .conteudo-dois {
@@ -88,30 +90,26 @@
 }
 
 .conteudo-dois h3 {
-    
     text-transform: uppercase;
     text-align: center;
 }
 
-
-@media (max-width:800px) {
-    .conteudo-dois {
-        margin-bottom: 20px;
+@media (min-width:280px) and (max-width:400px) {
+    section.conteudo-dois {
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
-    .conteudo-dois h3 {
-        font-size: 33px;
-        max-width: fit-content;
+    section.conteudo-dois > h3 {
+        padding-top: 20px;
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
     }
-    
-    .imagem-conteudo-dois {
-        padding: 0px;
-    }
-    .imagem-conteudo-dois img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-     
+
+    picture.imagem-conteudo-dois img {
+        width: 350px;
+        height: 450px;
+        object-fit: cover;
     }
 }
 
@@ -139,9 +137,4 @@
 
 
 
-@media (max-width:800px) {
-    .conteudo-final {
-        gap: 20px;
-        margin: 0px;
-    }
-} 
+}
